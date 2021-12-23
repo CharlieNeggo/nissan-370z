@@ -1,0 +1,40 @@
+{
+"n370z_lettering": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"370Z Trunk Lettering",
+        "value":40,
+    },
+    "slotType" : "n370z_lettering",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_lettering", ["n370z_bumper_R"]],
+    ],
+},
+"n370z_lettering_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Trunk Lettering",
+        "value":40,
+    },
+    "slotType" : "n370z_lettering",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 ["n370z_lettering", ["n370z_bumper_R"]],
+         ["n370z_lettering_nismo", ["n370z_bumper_R"]],
+    ],
+},
+"n370z_lettering_nismo_alt": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alternate Nismo Trunk Lettering",
+        "value":40,
+    },
+    "slotType" : "n370z_lettering",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 ["n370z_lettering", ["n370z_bumper_R"]],
+         ["n370z_lettering_nismo_alt", ["n370z_bumper_R"]],
+    ],
+},
+}

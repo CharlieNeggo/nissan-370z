@@ -1,0 +1,23 @@
+{
+  "Name":"370Z",
+  "Brand":"Nissan",
+  "Author":"BeamNG",
+  "Country":"Japan",
+  "Type":"Car",
+  "Body Style":"Coupe",
+  "Years":{"min":2009, "max":2020},
+  "Derby Class":"Sports Car",
+  "default_pc":"base_M",
+  "default_color":"Brilliant Silver",
+  "colors":{
+    "Magnetic Black": "0 0 0 1.4",
+	"Brilliant Silver": "0.545 0.561 0.573 1.2",
+	"Platinum Graphite": "0.305 0.337 0.349 1.2",
+	"Pearl White": "1 1 1 1.2",
+	"Solid Red": "0.682 0.02 0.067 1.3",
+	"Monterey Blue": "0.161 0.498 0.847 1.3",
+	"Chicane Yellow": "0.776 0.565 0.078 1.3",
+	"Black Cherry": "0.22 0.114 0.137 1.3",
+	"Midnight Blue": "0.063 0.09 0.192 1.3",
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "n370z_stitching_single" : {
+    "name" : "n370z_stitching_single",
+    "class" : "Material",
+    "persistentId" : "0785a0f1-23c8-48e0-bd9d-61c4ff25d242",
+    "Stages" : [
+      {
+        "pixelSpecular" : true,
+        "specularPower" : 128,
+		"diffuseColor" : [ 0, 0, 0, 0 ],
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/stitching/n370z_stitching_single_d.dds",
+		"normalMap" : "vehicles/n370z/textures/stitching/n370z_stitching_single_n.dds",
+		"specularMap" : "vehicles/n370z/textures/stitching/n370z_stitching_single_s.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "castShadows" : false,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_stitching_single",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "n370z_stitching_double" : {
+    "name" : "n370z_stitching_double",
+    "class" : "Material",
+    "persistentId" : "0785a0f1-23c8-48e0-bd9d-61c4ff25d242",
+    "Stages" : [
+      {
+        "pixelSpecular" : true,
+        "specularPower" : 128,
+		"diffuseColor" : [ 0, 0, 0, 0 ],
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/stitching/n370z_stitching_double_d.dds",
+		"normalMap" : "vehicles/n370z/textures/stitching/n370z_stitching_double_n.dds",
+		"specularMap" : "vehicles/n370z/textures/stitching/n370z_stitching_double_s.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "castShadows" : false,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_stitching_double",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "n370z_stitching_vpattern" : {
+    "name" : "n370z_stitching_vpattern",
+    "class" : "Material",
+    "persistentId" : "0785a0f1-23c8-48e0-bd9d-61c4ff25d242",
+    "Stages" : [
+      {
+        "pixelSpecular" : true,
+        "specularPower" : 128,
+		"diffuseColor" : [ 0, 0, 0, 0 ],
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/stitching/n370z_stitching_vpattern_d.dds",
+		"normalMap" : "vehicles/n370z/textures/stitching/n370z_stitching_vpattern_n.dds",
+		"specularMap" : "vehicles/n370z/textures/stitching/n370z_stitching_vpattern_s.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "castShadows" : false,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_stitching_vpattern",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  }
+  }

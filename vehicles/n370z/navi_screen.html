@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="/ui/lib/ext/hu.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+
+        #mapContainer {
+            overflow: hidden;
+            background: #2a2a2a;
+        }
+
+        #mapPerspective {
+            transform: rotateX(50deg);
+        }
+
+        #map {
+            max-width: 256px;
+            max-height: 128px;
+            overflow: visible;
+        }
+
+        #pointer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -6px;
+            margin-top: -10px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 6px 20px 6px;
+            border-color: transparent transparent #2568B0 transparent;
+            stroke: 2px solid white;
+        }
+
+        #bootscreen {
+            position: absolute;
+            width: 256px;
+            height: 128px;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            background-image: url('nissan_boot.png');
+            background-color: black;
+            background-size: cover;
+            transition: opacity 3s, transform 2.5s;
+        }
+
+        .fadeout {
+            opacity: 0;
+            /* transform: scale(3, 3); */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bootscreen"></div>
+    <div style="height: 100%; width: 100%; position: relative;">
+        <!-- map container -->
+        <div id="overflow-wrap" style=" width: 100%; height: 100%; overflow: hidden">
+            <div id="mapContainer" style="overflow: visible;">
+                <svg style="overflow: visible;"></svg>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute; top: 48px; left: 112px; transform: rotateX(50deg)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 33.867 33.867" id="svg8">
+            <g id="layer1" transform="translate(0 -263.133)">
+                <g id="vehicleMarker" transform="matrix(4.53704 0 0 4.53704 -7.075 -1044.026)" stroke-width=".265">
+                    <path id="path3682-6" d="M5.292 288.798l-2.646 6.614 2.646-1.322 2.646 1.322z" fill="#282828" />
+                    <path id="path3682" d="M5.292 288.269l-2.646 6.614 2.646-1.323 2.645 1.323z" fill="#FF3232" />
+                </g>
+            </g>
+        </svg>
+    </div>
+</body>
+
+<script>
+    var map = (function () {
+        var state = {
+            x: 0,
+            y: 0,
+            zoom: 500,
+            rotation: 0,
+            time: 0
+        };
+
+        var mapContainer = document.getElementById('mapContainer')
+        var svg = mapContainer.children[0];
+
+        var elements = [];
+        var ROADCOLOR = '#FFFFFF';
+
+        var init = false;
+        var mapScale = 1;
+        var mapDimensions = []
+
+        function _createLine(p1, p2, color) {
+            hu('<line>', svg).attr({
+                x1: p1.x, y1: p1.y, x2: p2.x, y2: p2.y,
+                stroke: color,
+                strokeWidth: Math.max(p1.radius, p2.radius),
+                strokeLinecap: "round",
+            });
+        }
+
+        function initMap(data) {
+
+            // setup map dimensions
+            mapDimensions = [
+                // data.terrainOffset[0] / mapScale,
+                // data.terrainOffset[1] / mapScale,
+                -data.terrainSize[0] / (mapScale*2),
+                -data.terrainSize[1] / (mapScale*2),
+                data.terrainSize[0] / mapScale,
+                data.terrainSize[1] / mapScale
+            ];
+
+            if (init === false) {
+                // init map svg + background image
+                if (data.minimapImage) {
+                    var bgImage = hu('<image>', svg).attr({
+                        'x': data.terrainOffset[0] / mapScale,
+                        'y': data.terrainOffset[1] / mapScale,
+                        'width': data.terrainSize[0] / mapScale,
+                        'height': data.terrainSize[1] / mapScale,
+                        'transform': "scale(-1,-1)",
+                        'xlink:href': "/" + data.minimapImage,
+                    });
+                }
+
+                svg.style.transform = `scale(-1, -1)`
+                mapContainer.style.width = data.terrainSize[0] / mapScale + "px";
+                mapContainer.style.height = data.terrainSize[1] / mapScale + "px";
+                svg.setAttribute('viewBox', mapDimensions.join(' '));
+
+                // draw roads
+                for (var key in data.nodes) {
+                    var el = data.nodes[key];
+                    // walk the links of the node
+                    if (el.links !== undefined) { // links
+                        for (var key2 in el.links) {
+                            var el2 = data.nodes[key2];
+                            _createLine({
+                                x: -el.pos[0] / mapScale,
+                                y: el.pos[1] / mapScale,
+                                radius: Math.min(Math.max(el.radius, 0), 5) * 3
+                            }, {
+                                    x: -el2.pos[0] / mapScale,
+                                    y: el2.pos[1] / mapScale,
+                                    radius: Math.min(Math.max(el2.radius, 0), 5) * 3    // prevents massive blobs due to waypoints having larger radius'
+                                }, ROADCOLOR
+                            );
+                        }
+                    }
+                }
+                init = true;
+            }
+        }
+
+        function update(data) {
+            if (data !== undefined) {
+                initMap(data);
+            }
+            var focusX = state.x / mapScale;
+            var focusY = state.y / mapScale;
+            var origin = `${((mapDimensions[0] * -1) / mapScale) - focusX}px ${((mapDimensions[1] * -1) / mapScale) - focusY}px`;
+            mapContainer.style.transformOrigin = origin;
+            var translateX = ((((mapDimensions[0] / mapScale)) + 128) + focusX);
+            var translateY = ((((mapDimensions[1] / mapScale)) + 64) + focusY);
+            mapContainer.style.transform = `translate3d(${translateX}px,${translateY}px, 0px) rotateX(${60 + (state.zoom / 30)}deg) rotateZ(${180 + (state.rotation)}deg) scale(1)`;
+        }
+
+        function setData(data) {
+            if (Object.keys(data).length <= 0) {
+                console.log("Received empty map data")
+                return
+            }
+            update(data);
+            hideBootscreen();
+        }
+
+        function render() {
+            mapContainer.innerHTML = elements.join('');
+        }
+
+        function hideBootscreen() {
+            document.getElementById('bootscreen').className += ' fadeout';
+        }
+
+        function updateData(data) {
+            setLocation(data.x, data.y);
+            setRotation(data.rotation);
+            state.zoom = data.zoom;
+            state.time = data.time;
+        }
+
+        function setLocation(x, y) {
+            state.x = -x;
+            state.y = y;
+        }
+
+        function setRotation(rotation) {
+            state.rotation = rotation + 180;
+            update();
+        }
+
+        return {
+            updateData: updateData,
+            setRotation: setRotation,
+            setData: setData,
+            setLocation: setLocation
+        }
+    })();
+</script>
+
+</html>

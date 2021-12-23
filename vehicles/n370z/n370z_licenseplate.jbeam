@@ -1,0 +1,50 @@
+{
+"n370z_licenseplate_F": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front License Plate",
+        "value":0,
+    },
+    "slotType" : "n370z_licenseplate_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["licenseplate", ["n370z_bumper_F"],[],{"pos":{"x":0.0, "y":-2.165, "z":0.45}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+},
+"n370z_licenseplate_F_2013": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2013 Front License Plate",
+        "value":0,
+    },
+    "slotType" : "n370z_licenseplate_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["licenseplate", ["n370z_bumper_F"],[],{"pos":{"x":0.0, "y":-2.102, "z":0.45}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+},
+"n370z_licenseplate_F_2009": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2009 Front License Plate",
+        "value":0,
+    },
+    "slotType" : "n370z_licenseplate_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["licenseplate", ["n370z_bumper_F"],[],{"pos":{"x":0.0, "y":-2.122, "z":0.45}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+},
+"n370z_licenseplate_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear License Plate",
+        "value":0,
+    },
+    "slotType" : "n370z_licenseplate_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["licenseplate", ["n370z_bumper_R"],[],{"pos":{"x":0.0, "y":2.0387, "z":0.637}, "rot":{"x":10, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+},
+}

@@ -1,0 +1,12 @@
+{
+"Drivetrain":"RWD",
+"Configuration":"Heritage Edition (M)",
+"Transmission":"Manual",
+"Description":"Base model with commemorative livery, 2019 model year",
+"Value":30000,
+"Propulsion":"ICE",
+"Fuel Type":"Gasoline",
+"Induction Type":"NA",
+"Config Type":"Factory",
+"default_color":"Chicane Yellow"
+}

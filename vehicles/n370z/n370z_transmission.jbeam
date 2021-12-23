@@ -1,0 +1,629 @@
+{
+"n370z_transmission_6M": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"6-Speed Manual Transmission",
+        "value":1800,
+    },
+    "slotType": "n370z_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["n370z_flywheel","n370z_flywheel","Flywheel", {"coreSlot":true}],
+        ["n370z_transfer_case","n370z_transfer_case_RWD", "Transfer Case"{"coreSlot":true}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["frictionClutch", "clutch", "mainEngine", 1],
+        ["manualGearbox", "gearbox", "clutch", 1],
+    ],
+    "n370zGauges": {
+        "gearboxType": "manual",
+    },	
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-3.446, 0, 3.79, 2.32, 1.62, 1.27, 1.00, 0.79],
+        "friction": 1.10
+        "dynamicFriction": 0.00115,
+        "torqueLossCoef": 0.0152,
+        "gearboxNode:":["tra1"],
+
+        "gearWhineCoefsInput":  [0.60, 0.00, 0.18, 0.16, 0.14, 0.12, 0.10, 0.08],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.11, 0.13, 0.15, 0.17, 0.19, 0.21],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>helical_01>twine_in",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>helical_01>twine_out",
+
+        //"forwardInputPitchCoef":1
+        //"forwardOutputPitchCoef":1
+        //"reverseInputPitchCoef":0.7
+        //"reverseOutputPitchCoef":0.7
+
+        //"gearWhineInputPitchCoefSmoothing":50
+        //"gearWhineOutputPitchCoefSmoothing":50
+        //"gearWhineInputVolumeCoefSmoothing":10
+        //"gearWhineOutputVolumeCoefSmoothing":10
+
+        //"gearWhineFixedCoefOutput": 0.7
+        //"gearWhineFixedCoefInput": 0.4		
+    },
+    "vehicleController": {
+        "shiftDownRPMOffsetCoef":1.2,
+        "calculateOptimalLoadShiftPoints": true,
+        "lowShiftDownRPM":[0,0,0,1400,1500,1500,1400,1300],
+        "lowShiftUpRPM":[0,0,2800,2600,2500,2350,2200],
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["n370z_transmission", ["n370z_engine","n370z_transmission"],[]{"pos":{"x":0,"y":0,"z":0}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--6 Speed Manual--
+         {"selfCollision":false},
+         {"collision":true}
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"n370z_transmission"},
+         {"nodeWeight":33},
+         ["tra1", 0.0, -0.36, 0.375],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION CONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":250000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e1l"],
+          ["tra1","e3r"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"n370z_transmission_6M_sport": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"6-Speed Tuned Manual Transmission",
+        "value":2800,
+    },
+    "slotType": "n370z_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["n370z_flywheel","n370z_flywheel_sport","Flywheel", {"coreSlot":true}],
+        ["n370z_transfer_case","n370z_transfer_case_RWD", "Transfer Case"{"coreSlot":true}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["frictionClutch", "clutch", "mainEngine", 1],
+        ["manualGearbox", "gearbox", "clutch", 1],
+    ],
+    "n370zGauges": {
+        "gearboxType": "manual",
+    },	
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-3.446, 0, 3.69, 2.22, 1.52, 1.17, 1.00, 0.79],
+        "friction": 1.13
+        "dynamicFriction": 0.00115,
+        "torqueLossCoef": 0.0152,
+        "gearboxNode:":["tra1"],
+
+        "gearWhineCoefsInput":  [0.40, 0.00, 0.15, 0.12, 0.11, 0.10, 0.09, 0.08],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.08, 0.095, 0.11, 0.12, 0.13, 0.14],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>helical_01>twine_in",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>helical_01>twine_out",
+
+        //"forwardInputPitchCoef":1
+        //"forwardOutputPitchCoef":1
+        //"reverseInputPitchCoef":0.7
+        //"reverseOutputPitchCoef":0.7
+
+        //"gearWhineInputPitchCoefSmoothing":50
+        //"gearWhineOutputPitchCoefSmoothing":50
+        //"gearWhineInputVolumeCoefSmoothing":10
+        //"gearWhineOutputVolumeCoefSmoothing":10
+
+        //"gearWhineFixedCoefOutput": 0.7
+        //"gearWhineFixedCoefInput": 0.4
+    },
+    "vehicleController": {
+        "transmissionShiftDelay":0.15,
+        "shiftDownRPMOffsetCoef":1.2,
+        //"aggressionSmoothingDown":0.05,
+        "calculateOptimalLoadShiftPoints": true,
+        "aggressionHoldOffThrottleDelay":3,
+        "lowShiftDownRPM":[0,0,0,1500,1600,1700,1500,1400],
+        "lowShiftUpRPM":[0,0,3100,2700,2600,2500,2400],
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["n370z_transmission", ["n370z_engine","n370z_transmission"],[]{"pos":{"x":0,"y":0,"z":0}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--6 Speed Manual--
+         {"selfCollision":false},
+         {"collision":true}
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"n370z_transmission"},
+         {"nodeWeight":32},
+         ["tra1", 0.0, -0.36, 0.375],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION CONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":250000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e1l"],
+          ["tra1","e3r"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"n370z_transmission_6M_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race 6-Speed Manual Transmission",
+        "value":3800,
+    },
+    "slotType" : "n370z_transmission","slots": [
+        ["type", "default", "description"],
+        ["n370z_flywheel","n370z_flywheel_race","Flywheel", {"coreSlot":true}],
+        ["n370z_transfer_case","n370z_transfer_case_RWD", "Transfer Case"{"coreSlot":true}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$gear_R", "range", ":1", "Transmission", 3.25, 0.5, 5, "Reverse Gear Ratio", "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_1", "range", ":1", "Transmission", 3.64, 0.5, 5, "1st Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_2", "range", ":1", "Transmission", 2.38, 0.5, 5, "2nd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_3", "range", ":1", "Transmission", 1.76, 0.5, 5, "3rd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_4", "range", ":1", "Transmission", 1.30, 0.5, 5, "4th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_5", "range", ":1", "Transmission", 1.00, 0.5, 5, "5th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_6", "range", ":1", "Transmission", 0.79, 0.5, 5, "6th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["frictionClutch", "clutch", "mainEngine", 1],
+        ["manualGearbox", "gearbox", "clutch", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":["$=-$gear_R", 0, "$gear_1", "$gear_2", "$gear_3", "$gear_4", "$gear_5", "$gear_6"],
+        "friction": 1.25,
+        "dynamicFriction": 0.00124,
+        "torqueLossCoef": 0.0135,
+        "gearboxNode:":["tra1"],
+
+        "gearWhineCoefsInput":  [0.64, 0.00, 0.64, 0.64, 0.64, 0.64, 0.64, 0.64],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.64, 0.64, 0.64, 0.64, 0.64, 0.64],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>straight_01>twine_in_race",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>straight_01>twine_out_race",
+
+        //"forwardInputPitchCoef":1
+        //"forwardOutputPitchCoef":1
+        //"reverseInputPitchCoef":0.7
+        //"reverseOutputPitchCoef":0.7
+
+        //"gearWhineInputPitchCoefSmoothing":50
+        //"gearWhineOutputPitchCoefSmoothing":50
+        //"gearWhineInputVolumeCoefSmoothing":10
+        //"gearWhineOutputVolumeCoefSmoothing":10
+
+        //"gearWhineFixedCoefOutput": 0.7
+        //"gearWhineFixedCoefInput": 0.4
+    },
+    "clutch": {
+        "clutchFreePlay":0.2,
+    },
+    "vehicleController": {
+        "transmissionShiftDelay":0.13,
+        "calculateOptimalLoadShiftPoints": true,
+        "shiftDownRPMOffsetCoef":1.20,
+        "aggressionHoldOffThrottleDelay":3,
+        //"aggressionSmoothingDown":0.05
+        //"lowShiftDownRPM":[0,0,0,1500,1700,1600,1600,1600],
+        //"lowShiftUpRPM":[0,0,3600,3200,2900,2900,2900],
+        "lowShiftDownRPM":[0,0,0,2000,2300,2300,2300,2300],
+        "lowShiftUpRPM":[0,0,4100,4000,3850,3900,3700],
+        //"wheelSlipUpThreshold":200,
+        "clutchLaunchStartRPM": 2900,
+        "clutchLaunchTargetRPM": 3000,
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_transmission_awd", ["n370z_engine","n370z_transmission"]],
+         ["n370z_manual", ["n370z_body"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--6 Speed Manual--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"n370z_transmission"},
+         {"nodeWeight":7},
+         ["tra1r",-0.32, -1.31, 0.33],
+         ["tra1l", 0.32, -1.31, 0.33],
+         ["tra1", -0.2, -1.43, 0.22],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":12001000,"beamDamp":400},
+          {"beamDeform":250000,"beamStrength":"FLT_MAX"},
+          ["tra1l","e2r"],
+          ["tra1l","e4r"],
+          ["tra1l","e2l"],
+          ["tra1l","e4l"],
+          ["tra1r","e1r"],
+          ["tra1r","e3r"],
+          ["tra1r","e1l"],
+          ["tra1r","e3l"],
+          ["tra1r","tra1l"],
+          ["tra1","e1l"],
+          ["tra1","e2l"],
+          ["tra1","e4l"],
+          ["tra1","e3l"],
+          ["tra1","tra1l"],
+          ["tra1","tra1r"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"n370z_transmission_6M_SQ": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race 6-Speed Sequential Transmission",
+        "value":7900,
+    },
+    "slotType" : "n370z_transmission","slots": [
+        ["type", "default", "description"],
+        ["n370z_flywheel","n370z_flywheel_race","Flywheel", {"coreSlot":true}],
+        ["n370z_transfer_case","n370z_transfer_case_RWD", "Transfer Case"{"coreSlot":true}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$gear_R", "range", ":1", "Transmission", 3.25, 0.5, 5, "Reverse Gear Ratio", "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_1", "range", ":1", "Transmission", 3.64, 0.5, 5, "1st Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_2", "range", ":1", "Transmission", 2.38, 0.5, 5, "2nd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_3", "range", ":1", "Transmission", 1.76, 0.5, 5, "3rd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_4", "range", ":1", "Transmission", 1.35, 0.5, 5, "4th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_5", "range", ":1", "Transmission", 1.06, 0.5, 5, "5th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_6", "range", ":1", "Transmission", 0.84, 0.5, 5, "6th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["frictionClutch", "clutch", "mainEngine", 1],
+        ["sequentialGearbox", "gearbox", "clutch", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":["$=-$gear_R", 0, "$gear_1", "$gear_2", "$gear_3", "$gear_4", "$gear_5", "$gear_6"],
+        "friction": 1.24,
+        "dynamicFriction": 0.00124,
+        "torqueLossCoef": 0.013,
+        "gearboxNode:":["tra1"],
+
+        "gearWhineCoefsInput":  [0.64, 0.00, 0.70, 0.60, 0.50, 0.50, 0.50, 0.50],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.60, 0.60, 0.60, 0.60, 0.60, 0.60],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>straight_01>twine_in_race",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>straight_01>twine_out_race",
+
+        //"forwardInputPitchCoef":1
+        //"forwardOutputPitchCoef":1
+        //"reverseInputPitchCoef":0.7
+        //"reverseOutputPitchCoef":0.7
+
+        //"gearWhineInputPitchCoefSmoothing":50
+        //"gearWhineOutputPitchCoefSmoothing":50
+        //"gearWhineInputVolumeCoefSmoothing":10
+        //"gearWhineOutputVolumeCoefSmoothing":10
+
+        //"gearWhineFixedCoefOutput": 0.7
+        //"gearWhineFixedCoefInput": 0.4
+    },
+    "clutch": {
+        "clutchFreePlay":0.75,
+        "lockSpringCoef":0.25,
+    },
+    "vehicleController": {
+        "calculateOptimalLoadShiftPoints": true,
+        "shiftDownRPMOffsetCoef":1.13,
+        "aggressionHoldOffThrottleDelay":3,
+        //"aggressionSmoothingDown":0.05
+        //"lowShiftDownRPM":[0,0,0,1500,1700,1600,1600,1600],
+        //"lowShiftUpRPM":[0,0,3600,3200,2900,2900,2900],
+        "lowShiftDownRPM":[0,0,0,2000,2300,2300,2300,2300],
+        "lowShiftUpRPM":[0,0,4100,4000,3850,3900,3700],
+        "clutchLaunchStartRPM": 2000,
+        "clutchLaunchTargetRPM": 2100,
+        //"wheelSlipUpThreshold":200,
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_transmission_awd", ["n370z_engine","n370z_transmission"]],
+         ["n370z_manual", ["n370z_body"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--6 Speed SQ--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"n370z_transmission"},
+         {"nodeWeight":7},
+         ["tra1r",-0.32, -1.31, 0.33],
+         ["tra1l", 0.32, -1.31, 0.33],
+         ["tra1", -0.2, -1.43, 0.22],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":12001000,"beamDamp":400},
+          {"beamDeform":250000,"beamStrength":"FLT_MAX"},
+          ["tra1l","e2r"],
+          ["tra1l","e4r"],
+          ["tra1l","e2l"],
+          ["tra1l","e4l"],
+          ["tra1r","e1r"],
+          ["tra1r","e3r"],
+          ["tra1r","e1l"],
+          ["tra1r","e3l"],
+          ["tra1r","tra1l"],
+          ["tra1","e1l"],
+          ["tra1","e2l"],
+          ["tra1","e4l"],
+          ["tra1","e3l"],
+          ["tra1","tra1l"],
+          ["tra1","tra1r"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"n370z_transmission_7A": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"7-Speed Automatic Transmission",
+        "value":2800,
+    },
+    "slotType": "n370z_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["n370z_converter","n370z_converter","Torque Converter", {"coreSlot":true}],
+        ["n370z_transfer_case","n370z_transfer_case_RWD", "Transfer Case"{"coreSlot":true}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["torqueConverter", "torqueConverter", "mainEngine", 1],
+        ["automaticGearbox", "gearbox", "torqueConverter", 1],
+    ],	
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-3.972, 0, 4.923, 3.193, 2.042, 1.411, 1.000, 0.862, 0.771],
+        "parkLockTorque":2000,
+        "oneWayViscousCoef":40,
+        "gearChangeTime": 0.12,
+        "shiftEfficiency":0.8,
+        "friction": 1.41,
+        "dynamicFriction": 0.0014,
+        "torqueLossCoef": 0.0166,
+        "gearboxNode:":["tra1"],
+    },
+    "vehicleController": {
+        "automaticModes":"PRNDM",
+        "shiftDownRPMOffsetCoef":1.15,
+        "calculateOptimalLoadShiftPoints": true,
+        "transmissionGearChangeDelay":0.5
+        "aggressionHoldOffThrottleDelay":2.5,
+        "aggressionSmoothingUp":2
+        "aggressionSmoothingDown":0.2
+        "gearboxDecisionSmoothingUp":2
+        "gearboxDecisionSmoothingDown":2
+        "lowShiftDownRPM":2000,
+        "lowShiftUpRPM":2500,
+        "maxGearChangeTime": 0.6,
+        "minGearChangeTime": 0.3,
+        "sportGearChangeTime": 0.1,
+        "throttleCoefWhileShifting": 0.7
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["n370z_transmission", ["n370z_engine","n370z_transmission"],[]{"pos":{"x":0,"y":0,"z":0}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--7 Speed Auto--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"n370z_transmission"},
+         {"nodeWeight":42},
+         ["tra1", 0.0, -0.36, 0.33],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION CONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":250000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e1l"],
+          ["tra1","e3r"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"n370z_transmission_7DCT": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"7-Speed Dual Clutch Transmission Swap",
+        "value":2800,
+    },
+    "slotType": "n370z_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["n370z_transfer_case","n370z_transfer_case_RWD", "Transfer Case"],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["dctGearbox", "gearbox", "mainEngine", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-3.30, 0, 4.71, 3.14, 2.11, 1.67, 1.285, 1.00, 0.84],
+        "parkLockTorque":2000,
+        "friction": 1.31,
+        "dynamicFriction": 0.00132,
+        "torqueLossCoef": 0.0155,
+        "gearboxNode:":["tra1"],
+        "additionalEngineInertia":0.07,
+
+        "gearWhineCoefsInput":  [0.48, 0.00, 0.18, 0.16, 0.14, 0.12, 0.10, 0.08],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.11, 0.13, 0.15, 0.17, 0.19, 0.21],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>helical_01>twine_in",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>helical_01>twine_out",
+    },
+    "vehicleController": {
+        "automaticModes":"PRNDSM",
+        "shiftDownRPMOffsetCoef":1.15,
+        "calculateOptimalLoadShiftPoints": true,
+        "transmissionGearChangeDelay":0.25,
+        "aggressionHoldOffThrottleDelay":2.5,
+        "aggressionSmoothingUp":2,
+        "aggressionSmoothingDown":0.2,
+        "gearboxDecisionSmoothingUp":2,
+        "gearboxDecisionSmoothingDown":2,
+        "lowShiftDownRPM":1400,
+        "lowShiftUpRPM":2200,
+        "clutchLaunchStartRPM": 3000,
+        "clutchLaunchTargetRPM": 3500,
+        "dctClutchTime": 0.025
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["n370z_transmission", ["n370z_engine","n370z_transmission"],[]{"pos":{"x":0,"y":0,"z":0}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--7 Speed Auto--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"n370z_transmission"},
+         {"nodeWeight":42},
+         ["tra1", 0.0, -0.36, 0.33],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION CONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":250000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e1l"],
+          ["tra1","e3r"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"n370z_flywheel": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Flywheel",
+        "value":150,
+    },
+    "slotType" : "n370z_flywheel",
+    "clutch": {
+        "uiName":"Clutch",
+        "additionalEngineInertia":0.08,
+        "clutchMass":5,
+    },
+},
+"n370z_flywheel_heavy": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Heavy Flywheel",
+        "value":150,
+    },
+    "slotType" : "n370z_flywheel",
+    "clutch": {
+        "uiName":"Clutch",
+        "additionalEngineInertia":0.12,
+        "clutchMass":6,
+    },
+},
+"n370z_flywheel_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Ultra Light Flywheel",
+        "value":700,
+    },
+    "slotType" : "n370z_flywheel",
+    "clutch": {
+        "uiName":"Clutch",
+        "additionalEngineInertia":0.01,
+        "clutchMass":3.5,
+    },
+},
+"n370z_flywheel_sport": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sport Flywheel",
+        "value":400,
+    },
+    "slotType" : "n370z_flywheel",
+    "clutch": {
+        "uiName":"Clutch",
+        "additionalEngineInertia":0.05,
+        "clutchMass":4.25,
+    },
+},
+"n370z_transfer_case_RWD": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RWD Transfer Case",
+        "value":600,
+    },
+    "slotType" : "n370z_transfer_case",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["shaft", "transfercase", "gearbox", 1, {"friction":0.3, "dynamicFriction":0.00018, "uiName":"Rear Output Shaft"}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--tcase weight--
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"n370z_transmission"},
+         {"nodeWeight":20},
+         ["tcase", 0.13, -0.43, 0.33],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1500600,"beamDamp":60},
+          {"beamDeform":30000,"beamStrength":"FLT_MAX"},
+          ["tcase","e1r"],
+          ["tcase","e3r"],
+          ["tcase","e1l"],
+          ["tcase","e3l"],
+          ["tcase","tra1"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}

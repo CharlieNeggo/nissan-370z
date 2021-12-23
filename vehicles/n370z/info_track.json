@@ -1,0 +1,12 @@
+{
+"Drivetrain":"RWD",
+"Configuration":"Track (M)",
+"Transmission":"Automatic",
+"Description":"Track package with some improvements equiped with Turbos, 2015 model year",
+"Value":55000,
+"Propulsion":"ICE",
+"Fuel Type":"Gasoline",
+"Induction Type":"NA",
+"Config Type":"Factory",
+"default_color":"Midnight Black"
+}

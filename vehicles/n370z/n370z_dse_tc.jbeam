@@ -1,0 +1,40 @@
+{
+    "n370z_DSE_TC_RWD": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Traction Control (RWD)",
+            "value":250,
+        },
+        "slotType" : "n370z_DSE_TC",
+        
+        "controller": [
+            ["fileName"],
+            ["drivingDynamics/supervisors/tractionControl" {"name": "tractionControl"}]
+            ["drivingDynamics/supervisors/slipProviders/virtualSpeedSlip"]
+            
+        ],
+        
+        "tractionControl": {
+            "tractionControlledMotors": ["mainEngine"]
+        }
+        "motorTorqueControl": {
+            "useForTractionControl": true,
+            "tractionControl": {
+                "wheelGroupSettings":[
+                    ["motorName",   "slipThreshold",    "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["mainEngine",  0.30,                 0.7,    2.0,    0.1,    10,                 20]
+                ]
+            }
+        }
+        
+        "brakeControl": {
+            "useForTractionControl": true,
+            "tractionControl": {
+                "wheelGroupSettings":[
+                    ["motorName",   "slipThreshold",    "slipRangeThreshold",   "maxVelocity"    "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["mainEngine",  0.20,                0.2,                    25,              1,      1.5,    0,      20,                 2]
+                ]
+            }
+        }
+    },
+}

@@ -1,0 +1,181 @@
+{
+  "n370z_gauges" : {
+    "name" : "n370z_gauges",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/gauges/n370z_gauges_d.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_plastic_s.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "n370z_gauges",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_gauges_on" : {
+    "name" : "n370z_gauges_on",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/gauges/n370z_gauges_d.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_plastic_s.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {        
+		"colorMap" : "vehicles/n370z/textures/gauges/n370z_gauges_g.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_plastic_s.dds",
+        "pixelSpecular" : true,
+		"emissive" : true,
+        "glow" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+	  },
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "n370z_gauges_on",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_gauges.skin_gauges.nismo" : {
+    "name" : "n370z_gauges.skin_gauges.nismo",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/gauges/n370z_gauges_nismo_d.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_plastic_s.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "n370z_gauges.skin_gauges.nismo",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_gauges_on.skin_gauges.nismo" : {
+    "name" : "n370z_gauges_on",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/gauges/n370z_gauges_nismo_d.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_plastic_s.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {        
+		"colorMap" : "vehicles/n370z/textures/gauges/n370z_gauges_g.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_plastic_s.dds",
+        "pixelSpecular" : true,
+		"emissive" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+	  },
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "n370z_gauges_on.skin_gauges.nismo",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },  
+  "n370z_gauges_screen" : {
+    "name" : "n370z_gauges_screen",
+    "class" : "Material",
+    "persistentId" : "267f8324-d854-4a03-a8ab-f98ee1107445",
+    "Stages" : [
+      {
+        "colorMap" : "@n370z_gauges_screen",
+        "emissive" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "mapTo" : "n370z_gauges_screen",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucentBlendOp" : "None"
+  } ,  
+  "n370z_screen" : {
+    "name" : "n370z_screen",
+    "class" : "Material",
+    "persistentId" : "267f8324-d854-4a03-a8ab-f98ee1107445",
+    "Stages" : [
+      {
+        "colorMap" : "@n370z_screen",
+        "emissive" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "mapTo" : "n370z_screen",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucentBlendOp" : "None"
+  } 
+}

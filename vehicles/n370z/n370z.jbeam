@@ -1,0 +1,132 @@
+{
+"n370z": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nissan 370z-Series",
+    },
+    "slotType" : "main",
+    "slots": [
+        ["type", "default", "description"],
+        ["n370z_body","n370z_body", "Body", {"coreSlot":true}],
+        ["paint_design","", "Paint Design"],
+        ["licenseplate_design_2_1","","License Plate Design"],
+        ["n370z_mod", "", "Additional Modification"],
+    ],
+
+    "scaledragCoef":0.8,
+
+    "glowMap":{
+            "n370z_signal_FL":{"simpleFunction":{"signal_L":0.49}, "off":"n370z_headlights", "on":"n370z_headlights_on", "on_intense":"n370z_headlights_on_intense"},
+            "n370z_signal_FR":{"simpleFunction":{"signal_R":0.49}, "off":"n370z_headlights", "on":"n370z_headlights_on", "on_intense":"n370z_headlights_on_intense"},
+            "n370z_signal_FL_alt":{"simpleFunction":{"signal_L":0.49}, "off":"n370z_headlights_alt", "on":"n370z_headlights_alt_on", "on_intense":"n370z_headlights_alt_on_intense"},
+            "n370z_signal_FR_alt":{"simpleFunction":{"signal_R":0.49}, "off":"n370z_headlights_alt", "on":"n370z_headlights_alt_on", "on_intense":"n370z_headlights_alt_on_intense"},			
+            "n370z_signal_RL":{"simpleFunction":{"signal_L":0.49}, "off":"n370z_taillights", "on":"n370z_taillights_on", "on_intense":"n370z_taillights_on_intense"},
+            "n370z_signal_RR":{"simpleFunction":{"signal_R":0.49}, "off":"n370z_taillights", "on":"n370z_taillights_on", "on_intense":"n370z_taillights_on_intense"},			
+            "n370z_taillights":{"simpleFunction":{"lowhighbeam":0.49}, "off":"n370z_taillights", "on":"n370z_taillights_on", "on_intense":"n370z_taillights_on_intense"},
+            "n370z_brakelight":{"simpleFunction":{"brake":100}, "off":"n370z_taillights", "on":"n370z_taillights_on", "on_intense":"n370z_taillights_on_intense"},
+            "n370z_headlights":{"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"n370z_headlights", "on":"n370z_headlights_on", "on_intense":"n370z_headlights_on_intense"},
+			"n370z_headlights_alt":{"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"n370z_headlights_alt", "on":"n370z_headlights_alt_on", "on_intense":"n370z_headlights_alt_on_intense"},
+            "n370z_runninglight":{"simpleFunction":{"running":1}, "off":"n370z_headlights", "on":"n370z_headlights_on_intense", "on_intense":"n370z_headlights_on_intense"},
+			"n370z_runninglight_alt":{"simpleFunction":{"running":1}, "off":"n370z_headlights_alt", "on":"n370z_headlights_alt_on_intense", "on_intense":"n370z_headlights_alt_on_intense"},
+            "n370z_reverselight":{"simpleFunction":{"reverse":1}, "off":"n370z_taillights", "on":"n370z_taillights_on_intense", "on_intense":"n370z_taillights_on_intense"},
+            "n370z_foglight":{"simpleFunction":{"fog":1}, "off":"n370z_headlights", "on":"n370z_headlights_on_intense", "on_intense":"n370z_headlights_on_intense"},
+			"n370z_foglight_alt":{"simpleFunction":{"fog":1}, "off":"n370z_headlights_alt", "on":"n370z_headlights_alt_on_intense", "on_intense":"n370z_headlights_alt_on_intense"},
+
+            "n370z_gauges":{"simpleFunction":"lowhighbeam", "off":"n370z_gauges", "on":"n370z_gauges_on"},
+			"n370z_symbols":{"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"n370z_symbols", "on":"n370z_symbols_on"},
+			"n370z_screen":{"simpleFunction":"ignition", "off":"black", "on":"n370z_screen"},
+			"n370z_gauges_screen":{"simpleFunction":"ignition", "off":"black", "on":"n370z_gauges_screen"},
+			
+			"shiftlight_single_l0":    {"simpleFunction":{"led":1}, "off":"invis", "on":"shiftlight_on"},
+
+            //gauge lights
+            "signal_L":{"simpleFunction":"signal_L", "off":"invis", "on":"decals_gauges"},
+            "signal_R":{"simpleFunction":"signal_R", "off":"invis", "on":"decals_gauges"},
+            "checkengine":{"simpleFunction":"checkengine", "off":"invis", "on":"decals_gauges"},
+            //"battery":{"simpleFunction":"battery", "off":"invis", "on":"decals_gauges"},
+            "parkingbrake":{"simpleFunction":"parkingbrake", "off":"invis", "on":"decals_gauges"},
+            "lowfuel":{"simpleFunction":"lowfuel", "off":"invis", "on":"decals_gauges"},
+            "lowpressure":{"simpleFunction":"lowpressure", "off":"invis", "on":"decals_gauges"},
+            "abs":{"simpleFunction":"abswarn", "off":"invis", "on":"decals_gauges"},
+            "esc":{"simpleFunction":"esc", "off":"invis", "on":"decals_gauges"},
+            "tcs":{"simpleFunction":"tcs", "off":"invis", "on":"decals_gauges"},
+            "foglight":{"simpleFunction":"fog", "off":"invis", "on":"decals_gauges"},
+            "rearfog":{"simpleFunction":"rearfog", "off":"invis", "on":"decals_gauges"},
+            "oil":{"simpleFunction":"oil", "off":"invis", "on":"decals_gauges"},
+            "lowbeam":{"simpleFunction":"lowhighbeam", "off":"invis", "on":"decals_gauges"},
+            "highbeam":{"simpleFunction":"highbeam", "off":"invis", "on":"decals_gauges"},
+    },
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$brakestrength", "range", "", "Brakes", 1, 0.6, 1.0, "Brake Force", "Scales the overall brake torque for this car", {"minDis":60, "maxDis":100}],
+        ["$ffbstrength", "range", "", "Chassis", 1, 0.5, 2, "Force Feedback", "Scales the force feedback strength for this car", {"minDis":50, "maxDis":200}],
+    ],
+    "controller": [
+        ["fileName"],
+        ["vehicleController", {}],
+        ["beamNavigator", {"screenMaterialName": "@n370z_screen", "htmlFilePath": "local://local/vehicles/n370z/navi_screen.html", "name":"n370z_navi"}],
+		["n370zGauges", {"materialName": "@n370z_gauges_screen", "htmlPath": "local://local/vehicles/n370z/gauges_screen/gauges_screen.html"}],
+		["shiftLights"],
+    ],
+    "shiftLights": {
+        "engineName":"mainEngine",
+        "maxEngineRPMOffset": 500,
+        "rpmRange": 500,
+        "outputElectrics": ["led"],
+        "flashingOutputElectrics": ["led"],
+    },	
+
+},
+"n370z_skin_interior": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black Interior",
+        "value":1200,
+    },
+    "slotType" : "skin_interior",
+    "skinName" : "",
+},
+"n370z_gauges": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Gauges",
+        "value":1200,
+    },
+    "slotType" : "skin_gauges",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //needles
+        ["wheelspeed", "n370z_needle_speedo", "f1l","f1r","f6l", {"x":24, "y":0, "z":180}, {"x":0, "y":-3, "z":0}     , {"x":0, "y":0, "z":0}, 0, 81, -49.1, 1],
+        ["rpm",         "n370z_needle_tacho", "f1l","f1r","f6l", {"x":24, "y":0, "z":180}, {"x":0, "y":-0.025, "z":0}     , {"x":0, "y":0, "z":0}, 0, 9000, -5500, 1],
+        ["oiltemp",       "n370z_needle_oiltemp", "f1l","f1r","f6l", {"x":0, "y":0, "z":160}, {"x":0, "y":-2.18, "z":0}     , {"x":0, "y":0, "z":0}, 60, 150, -120, 1],
+		["volts",       "n370z_needle_volts", "f1l","f1r","f6l", {"x":0, "y":0, "z":160}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0, "z":0}, 60, 150, -120, 1],
+    ],
+    "skinName" : "",
+},
+"n370z_gauges_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Gauges",
+        "value":1200,
+    },
+    "slotType" : "skin_gauges",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //needles
+        ["wheelspeed", "n370z_needle_speedo", "f1l","f1r","f6l", {"x":24, "y":0, "z":180}, {"x":0, "y":-3, "z":0}     , {"x":0, "y":0, "z":0}, 0, 81, -49.1, 1],
+        ["rpm",         "n370z_needle_tacho", "f1l","f1r","f6l", {"x":24, "y":0, "z":180}, {"x":0, "y":-0.025, "z":0}     , {"x":0, "y":0, "z":0}, 0, 9000, -5500, 1],
+        ["oiltemp",       "n370z_needle_oiltemp", "f1l","f1r","f6l", {"x":0, "y":0, "z":160}, {"x":0, "y":-2.18, "z":0}     , {"x":0, "y":0, "z":0}, 60, 150, -120, 1],
+		["volts",       "n370z_needle_volts", "f1l","f1r","f6l", {"x":0, "y":0, "z":160}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0, "z":0}, 60, 150, -120, 1],
+    ],
+    "skinName" : "nismo",
+},
+"n370z_skin_heritage": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Heritage Edition Graphics",
+        "value":3600,
+    },
+    "slotType" : "paint_design",
+    "globalSkin" : "heritage",
+},
+}

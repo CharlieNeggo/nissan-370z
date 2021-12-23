@@ -1,0 +1,561 @@
+{
+  "n370z_headlights" : {
+    "name" : "n370z_headlights",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_headlights",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_headlights_on" : {
+    "name" : "n370z_headlights_on",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_g.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+		"glow" : true,
+		"emissive" : true,
+		"diffuseColor" : [ 1.5, 1.5, 1.5, 0.75 ],
+        "useAnisotropic" : true
+	  },
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_headlights_on",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_headlights_on_intense" : {
+    "name" : "n370z_headlights_on_intense",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_g.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+		"glow" : true,
+		"emissive" : true,
+		"diffuseColor" : [ 1.5, 1.5, 1.5, 1 ],
+        "useAnisotropic" : true
+	  },
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_headlights_on_intense",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_headlights_dmg" : {
+    "name" : "n370z_headlights_dmg",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_d.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_headlights_dmg",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "n370z_headlights_alt" : {
+    "name" : "n370z_headlights_alt",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_alt_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_headlights_alt",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_headlights_alt_on" : {
+    "name" : "n370z_headlights_alt_on",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_alt_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_g.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+		"glow" : true,
+		"emissive" : true,
+		"diffuseColor" : [ 1.5, 1.5, 1.5, 0.75 ],
+        "useAnisotropic" : true
+	  },
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_headlights_alt_on",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_headlights_alt_on_intense" : {
+    "name" : "n370z_headlights_alt_on_intense",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_alt_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_g.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+		"glow" : true,
+		"emissive" : true,
+		"diffuseColor" : [ 1.5, 1.5, 1.5, 1 ],
+        "useAnisotropic" : true
+	  },
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_headlights_alt_on_intense",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_headlights_alt_dmg" : {
+    "name" : "n370z_headlights_alt_dmg",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_alt_d.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_headlights_alt_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_headlights_alt_dmg",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },  
+  "n370z_taillights" : {
+    "name" : "n370z_taillights",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_taillights_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_taillights",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_taillights_on" : {
+    "name" : "n370z_taillights_on",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_taillights_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_taillights_g.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+		"glow" : true,
+		"emissive" : true,
+		"diffuseColor" : [ 1.5, 1.5, 1.5, 0.75 ],
+        "useAnisotropic" : true
+	  },
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_taillights_on",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_taillights_on_intense" : {
+    "name" : "n370z_taillights_on_intense",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_taillights_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_taillights_g.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+		"glow" : true,
+		"emissive" : true,
+		"diffuseColor" : [ 1.5, 1.5, 1.5, 1 ],
+        "useAnisotropic" : true
+	  },
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_taillights_on_intense",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_taillights_dmg" : {
+    "name" : "n370z_taillights_dmg",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_taillights_d.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/lights/n370z_taillights_d.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_taillights_dmg",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },  
+  "n370z_brakelight" : {
+    "name" : "n370z_brakelight",
+    "mapTo" : "n370z_brakelight",
+    "class" : "Material",
+    "persistentId" : "d98a21f8-0eed-471e-b1d8-27d4281b1076",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  },
+  "n370z_chmsl" : {
+    "name" : "n370z_chmsl",
+    "mapTo" : "n370z_chmsl",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  }, 
+  "n370z_signal_FL" : {
+    "name" : "n370z_signal_FL",
+    "mapTo" : "n370z_signal_FL",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  },
+  "n370z_signal_FR" : {
+    "name" : "n370z_signal_FR",
+    "mapTo" : "n370z_signal_FR",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  },
+  "n370z_signal_FL" : {
+    "name" : "n370z_signal_FL",
+    "mapTo" : "n370z_signal_FL",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  },
+  "n370z_signal_FR_alt" : {
+    "name" : "n370z_signal_FR_alt",
+    "mapTo" : "n370z_signal_FR_alt",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  },   
+  "n370z_signal_RL" : {
+    "name" : "n370z_signal_RL",
+    "mapTo" : "n370z_signal_RL",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  },
+  "n370z_signal_RR" : {
+    "name" : "n370z_signal_RR",
+    "mapTo" : "n370z_signal_RR",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  },   
+  "n370z_runninglight" : {
+    "name" : "n370z_runninglight",
+    "mapTo" : "n370z_runninglight",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  }, 
+  "n370z_foglight" : {
+    "name" : "n370z_foglight",
+    "mapTo" : "n370z_foglight",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  },
+  "n370z_runninglight_alt" : {
+    "name" : "n370z_runninglight_alt",
+    "mapTo" : "n370z_runninglight_alt",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  }, 
+  "n370z_foglight_alt" : {
+    "name" : "n370z_foglight_alt",
+    "mapTo" : "n370z_foglight_alt",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  },   
+  "n370z_reverselight" : {
+    "name" : "n370z_reverselight",
+    "mapTo" : "n370z_reverselight",
+    "class" : "Material",
+    "persistentId" : "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages" : [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  }
+  }

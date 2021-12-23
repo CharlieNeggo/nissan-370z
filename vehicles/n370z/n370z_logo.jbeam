@@ -1,0 +1,74 @@
+{
+"n370z_logo_back": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nissan Logo",
+        "value":40,
+    },
+    "slotType" : "n370z_logo_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_logo_R", ["n370z_bumper_R"]], 
+    ],
+},
+"n370z_logo_back_blck": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black Nissan Logo",
+        "value":40,
+    },
+    "slotType" : "n370z_logo_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_logo_R_blck", ["n370z_bumper_R"]], 
+    ],
+},
+"n370z_logo_front": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Nissan Logo",
+        "value":40,
+    },
+    "slotType" : "n370z_logo_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_logo_F", ["n370z_bumper_F"]], 
+    ],
+},
+"n370z_logo_front_09": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2013 Front Nissan Logo",
+        "value":40,
+    },
+    "slotType" : "n370z_logo_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_logo_F_09", ["n370z_bumper_F"]], 
+    ],
+},
+"n370z_logo_front_blck": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black Front Nissan Logo",
+        "value":40,
+    },
+    "slotType" : "n370z_logo_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_logo_F_blck", ["n370z_bumper_F"]], 
+    ],
+},
+"n370z_logo_front_09_blck": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black 2013 Front Nissan Logo",
+        "value":40,
+    },
+    "slotType" : "n370z_logo_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_logo_F_09_blck", ["n370z_bumper_F"]], 
+    ],
+},
+}

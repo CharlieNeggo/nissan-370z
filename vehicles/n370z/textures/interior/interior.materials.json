@@ -1,0 +1,206 @@
+{
+  "n370z_leather" : {
+    "name" : "n370z_leather",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_leather_n.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/interior/n370z_leather_d.dds",
+        "pixelSpecular" : true,
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_leather_n.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_leather_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "n370z_leather",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_leather_perf" : {
+    "name" : "n370z_leather_perf",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_leather_perf_n.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/interior/n370z_leather_perf_d.dds",
+        "pixelSpecular" : true,
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_leather_perf_n.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_leather_perf_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "n370z_leather_perf",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_plastic" : {
+    "name" : "n370z_plastic",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_plastic_n.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/interior/n370z_plastic_d.dds",
+        "pixelSpecular" : true,
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_plastic_n.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_plastic_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "n370z_plastic",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+	"doubleSided": true,
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_plastic_red" : {
+    "name" : "n370z_plastic_red",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_plastic_n.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/interior/n370z_plastic_red_d.dds",
+        "pixelSpecular" : true,
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_plastic_n.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_plastic_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "n370z_plastic_red",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },  
+  "n370z_carpet" : {
+    "name" : "n370z_carpet",
+    "class" : "Material",
+    "persistentId" : "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_carpet_n.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/interior/n370z_carpet_d.dds",
+        "pixelSpecular" : true,
+		"normalMap" : "vehicles/n370z/textures/interior/n370z_carpet_n.dds",
+		"specularMap" : "vehicles/n370z/textures/interior/n370z_carpet_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "n370z_carpet",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+	"doubleSided" : true,
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "n370z_metal" : {
+    "name" : "n370z_metal",
+    "mapTo" : "n370z_metal",
+    "class" : "Material",
+    "persistentId" : "52f72e40-52c7-4813-a136-73621e1f50eb",
+    "Stages" : [
+      {
+        "diffuseColor" : [ 0.8149999976158142, 0.8309999704360962, 0.8389999866485596, 0.6 ],
+        "specularPower" : 128
+      },
+      {},
+      {},
+      {}
+    ],
+	"cubemap" : "global_cubemap_metalblurred",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",	
+    "translucentBlendOp" : "None"
+  },
+  "razor" : {
+    "name" : "razor",
+    "mapTo" : "razor",
+    "class" : "Material",
+    "persistentId" : "52f72e40-52c7-4813-a136-73621e1f50eb",
+    "Stages" : [
+      {
+		"colorMap" : "vehicles/n370z/textures/interior/razor_diffuse.png",
+        "diffuseColor" : [ 1, 1, 1, 1 ],
+        "specularPower" : 128
+      },
+      {
+		"colorMap" : "vehicles/n370z/textures/interior/razor_diffuse.png",
+        "diffuseColor" : [ 1, 1, 1, 1 ],
+        "specularPower" : 128	  
+	  },
+      {},
+      {}
+    ],
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",	
+    "translucentBlendOp" : "None"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "n370z_paint.skin.heritage" : {
+    "name" : "n370z_paint.skin.heritage",
+    "class" : "Material",
+    "persistentId" : "f12cc751-080b-42dd-b38a-230b65b863a3",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/common/invisible.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/common/null2.dds",
+        "diffuseColor" : [1, 1, 1, 1],
+        "pixelSpecular" : true,
+        "specularPower" : 128,
+		"instanceDiffuse" : true,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/n370z/textures/skins/n370z_skin_heritage.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 32,
+        "useAnisotropic" : true	  
+	  }
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "n370z_paint.skin.heritage",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "metallicFlakesMaskMap" : "shaders/common/custom/fadeMask.png",
+    "metallicFlakesNormalMap" : "shaders/common/custom/fadeNormals.png",
+    "MetallicPaint_flakeRoughness" : "1.522581",
+    "MetallicPaint_flakeMovement" : "8.896774",
+    "customMaterial" : "MetalicCarPaint",
+    "MetallicPaint_normalScale" : "1.000000",
+    "MetallicPaint_flakeColor" : "1.000000 1.0 1.0 1.000000",
+    "MetallicPaint_flakePower" : "2.403226",
+    "metallicPaintFactorMap" : "vehicles/common/null.dds",
+    "MetallicPaint_maskScale" : "6.800000"	
+  }
+}

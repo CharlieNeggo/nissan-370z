@@ -1,0 +1,37 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>default",
+    "samples" : 
+    [
+        [
+			["art/sound/engine/nis_370z_10/Exh2_00850.wav", 850],
+			["art/sound/engine/nis_370z_10/Exh2_01095.wav", 1095],
+			["art/sound/engine/nis_370z_10/Exh2_01503.wav", 1503],
+			["art/sound/engine/nis_370z_10/Exh2_01960.wav", 1960],
+			["art/sound/engine/nis_370z_10/Exh2_02410.wav", 2410],
+			["art/sound/engine/nis_370z_10/Exh2_02900.wav", 2900],
+			["art/sound/engine/nis_370z_10/Exh2_04660.wav", 4660],
+			["art/sound/engine/nis_370z_10/Exh2_05040.wav", 5040],
+			["art/sound/engine/nis_370z_10/Exh2_06530.wav", 6530]
+        ]
+        ,
+        [
+			["art/sound/engine/nis_370z_10/Exhaust_00663.wav", 663],
+			["art/sound/engine/nis_370z_10/Exhaust_01128.wav", 1128],
+			["art/sound/engine/nis_370z_10/Exhaust_01611.wav", 1611],
+			["art/sound/engine/nis_370z_10/Exhaust_02080.wav", 2080],
+			["art/sound/engine/nis_370z_10/Exhaust_02593.wav", 2593],
+			["art/sound/engine/nis_370z_10/Exhaust_02944.wav", 2944],
+			["art/sound/engine/nis_370z_10/Exhaust_03413.wav", 3413],
+			["art/sound/engine/nis_370z_10/Exhaust_03926.wav", 3926],
+			["art/sound/engine/nis_370z_10/Exhaust_04424.wav", 4424],
+			["art/sound/engine/nis_370z_10/Exhaust_04761.wav", 4761],
+			["art/sound/engine/nis_370z_10/Exhaust_05171.wav", 5171],
+			["art/sound/engine/nis_370z_10/Exhaust_05479.wav", 5479],
+			["art/sound/engine/nis_370z_10/Exhaust_05522.wav", 5522],
+			["art/sound/engine/nis_370z_10/Exhaust_06152.wav", 6152]
+		]
+    ]
+}

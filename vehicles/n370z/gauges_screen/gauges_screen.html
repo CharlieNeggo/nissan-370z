@@ -1,0 +1,18 @@
+<html ng-app="gaugesScreen">
+<head>
+  <meta charset="UTF-8">
+  <script src="/ui/lib/ext/angular/angular.js"></script>
+  <script src="gauges_screen.js"></script>
+  <link type="text/css" rel="stylesheet" href="gauges_screen.css">
+</head>
+
+<body ng-controller="GaugesScreenController as gaugeCtrl">
+	  <div id="fuel"></div>
+	  <div id="temp"></div>
+    <div id="mode"></div>
+      <div class="gear">{{data.gear}}</div>
+      <div class="time">{{data.time}}</div>
+      <div class="mode">{{data.mode}}</div>
+</body>
+
+</html>

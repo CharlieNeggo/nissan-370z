@@ -1,0 +1,321 @@
+{
+  "n370z_wheel_01a" : {
+    "name": "n370z_wheel_01a",
+    "mapTo": "n370z_wheel_01a",
+    "class": "Material",
+    "persistentId": "66c7b61b-e5dd-4a96-9372-265727a3c764",
+    "Stages": [
+      {
+        "colorMap": "vehicles/n370z/textures/wheels/n370z_wheel_01a_d.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "materialTag0": "Miscellaneous",
+    "translucentBlendOp": "None"
+  },
+  "TE37_black" : {
+    "name" : "TE37_black",
+    "mapTo" : "TE37_black",
+    "class" : "Material",
+    "persistentId" : "50b44bc4-e3f1-4880-b003-1bebc69ef19b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/n370z/paint_ao.png",
+        "baseColorMap": "vehicles/n370z/black.dds",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/n370z/paint_m.png",
+        "normalMap": "vehicles/common/null_n.dds",
+        "roughnessMap": "/vehicles/n370z/paint_r.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": false,
+	"doubleSided":true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "black" : {
+    "name" : "black",
+    "mapTo" : "black",
+    "class" : "Material",
+    "persistentId" : "50b44bc4-e3f1-4880-b003-1bebc69ef19b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/n370z/paint_ao.png",
+        "baseColorMap": "vehicles/n370z/black.dds",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/n370z/paint_m.png",
+        "normalMap": "vehicles/common/null_n.dds",
+        "roughnessMap": "/vehicles/n370z/paint_r.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": false,
+	"doubleSided":true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "RAYS_Logos" : {
+    "name" : "RAYS_Logos",
+    "mapTo" : "RAYS_Logos",
+    "class" : "Material",
+    "persistentId" : "50b44bc4-e3f1-4880-b003-1bebc69ef19b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/n370z/textures/wheels/rays_logos.dds",
+        "baseColorMap": "vehicles/n370z/textures/wheels/rays_logos.dds",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/n370z/textures/wheels/rays_logos.dds",
+        "normalMap": "vehicles/common/null_n.dds",
+        "roughnessMap": "/vehicles/n370z/paint_r.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": false,
+	"doubleSided":true,
+	"translucent" : true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "TE37_bronze" : {
+    "name" : "TE37_bronze",
+    "mapTo" : "TE37_bronze",
+    "class" : "Material",
+    "persistentId" : "50b44bc4-e3f1-4880-b003-1bebc69ef19b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/n370z/TE37_bronze.dds",
+        "baseColorMap": "vehicles/n370z/TE37_bronze.dds",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/n370z/TE37_bronze.dds",
+        "normalMap": "vehicles/common/null_n.dds",
+        "roughnessMap": "/vehicles/n370z/paint_r.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+	"doubleSided":true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "TE37_lightgray" : {
+    "name" : "TE37_lightgray",
+    "mapTo" : "TE37_lightgray",
+    "class" : "Material",
+    "persistentId" : "50b44bc4-e3f1-4880-b003-1bebc69ef19b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/n370z/TE37_lightgray.dds",
+        "baseColorMap": "vehicles/n370z/TE37_lightgray.dds",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/n370z/TE37_lightgray.dds",
+        "normalMap": "vehicles/common/null_n.dds",
+        "roughnessMap": "/vehicles/n370z/paint_r.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+	"doubleSided":true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "TE37_blue" : {
+    "name" : "TE37_blue",
+    "mapTo" : "TE37_blue",
+    "class" : "Material",
+    "persistentId" : "50b44bc4-e3f1-4880-b003-1bebc69ef19b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/n370z/TE37_blue.dds",
+        "baseColorMap": "vehicles/n370z/TE37_blue.dds",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/n370z/TE37_blue.dds",
+        "normalMap": "vehicles/common/null_n.dds",
+        "roughnessMap": "/vehicles/n370z/paint_r.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+	"doubleSided":true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "TE37_gray" : {
+    "name" : "TE37_gray",
+    "mapTo" : "TE37_gray",
+    "class" : "Material",
+    "persistentId" : "50b44bc4-e3f1-4880-b003-1bebc69ef19b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/n370z/TE37_gray.dds",
+        "baseColorMap": "vehicles/n370z/TE37_gray.dds",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/n370z/TE37_gray.dds",
+        "normalMap": "vehicles/common/null_n.dds",
+        "roughnessMap": "/vehicles/n370z/paint_r.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+	"doubleSided":true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "TE37_white" : {
+    "name" : "TE37_white",
+    "mapTo" : "TE37_white",
+    "class" : "Material",
+    "persistentId" : "50b44bc4-e3f1-4880-b003-1bebc69ef19b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/n370z/paint_ao.png",
+        "baseColorMap": "vehicles/n370z/paint_b.png",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/n370z/paint_m.png",
+        "normalMap": "vehicles/common/null_n.dds",
+        "roughnessMap": "/vehicles/n370z/paint_r.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+	"doubleSided":true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "n370z_wheel_02a" : {
+    "name": "n370z_wheel_02a",
+    "mapTo": "n370z_wheel_02a",
+    "class": "Material",
+    "persistentId": "66c7b61b-e5dd-4a96-9372-265727a3c764",
+    "Stages": [
+      {
+        "colorMap": "vehicles/n370z/textures/wheels/n370z_wheel_02a_d.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "materialTag0": "Miscellaneous",
+    "translucentBlendOp": "None"
+  },
+  "n370z_wheel_03a" : {
+    "name": "n370z_wheel_03a",
+    "mapTo": "n370z_wheel_03a",
+    "class": "Material",
+    "persistentId": "66c7b61b-e5dd-4a96-9372-265727a3c764",
+    "Stages": [
+      {
+        "colorMap": "vehicles/n370z/textures/wheels/n370z_wheel_03a_d.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "materialTag0": "Miscellaneous",
+    "translucentBlendOp": "None"
+  },
+    "n370z_wheel_04a" : {
+      "name": "n370z_wheel_04a",
+      "mapTo": "n370z_wheel_04a",
+      "class": "Material",
+      "persistentId": "66c7b61b-e5dd-4a96-9372-265727a3c764",
+      "Stages": [
+        {
+          "colorMap": "vehicles/n370z/textures/wheels/n370z_wheel_04a_d.dds"
+        },
+        {},
+        {},
+        {}
+      ],
+      "doubleSided": true,
+      "materialTag0": "Miscellaneous",
+      "translucentBlendOp": "None"
+    },
+  "tire_01p": {
+    "name": "tire_01p",
+    "mapTo": "tire_01p",
+    "class": "Material",
+    "persistentId": "86396249-32f2-48c5-8563-0758bb2f3f96",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/tires/tire_01f_ao.color.png",
+        "baseColorMap": "/vehicles/common/tires/tire_01f_b.color.png",
+        "metallicFactor": 0,
+        "normalMap": "/vehicles/common/tires/tire_01h_n.dds",
+        "roughnessMap": "/vehicles/common/tires/tire_01f_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5,
+  },
+  "n370z_wheel_05a" : {
+    "name": "n370z_wheel_05a",
+    "mapTo": "n370z_wheel_05a",
+    "class": "Material",
+    "persistentId": "66c7b61b-e5dd-4a96-9372-265727a3c764",
+    "Stages": [
+      {
+        "colorMap": "vehicles/n370z/textures/wheels/n370z_wheel_05a_d.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "materialTag0": "Miscellaneous",
+    "translucentBlendOp": "None"
+  }
+}

@@ -1,0 +1,222 @@
+{
+    "n370z_DSE_drivemodes_ICE": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Drive Modes (ICE)",
+            "value":250,
+        },
+        "slotType" : "n370z_DSE_drivemodes",
+        "slots":[
+            ["type", "default", "description"],
+            ["n370z_DSE_drivemodes_default","n370z_DSE_drivemodes_default_comfort", "Default Mode"],
+            ["n370z_DSE_drivemodes_Sport","", "Sport Plus Mode"],
+        ]
+
+        "controller": [
+            ["fileName"],
+            ["driveModes"]
+        ],
+
+        "driveModes": {
+            "enabledModes":["comfort", "sport", "off"]
+            "defaultMode": "comfort"
+            "defaultSettings": [
+                ["type"]
+                ["exhaust" {"name": "mainEngine", "mufflingOffset": 0, "gainOffset": 0}]
+                ["turbocharger", {"name": "mainEngine", "wastegateOffset": 0}],
+                ["transmission", {"defaultForwardMode": "D"}]
+
+                ["controller", {"controllerName":"electronicSplitShaftLock", "isEnabled":true, "minimumLock":"default"}]
+
+                ["controller", {"controllerName":"activeBiasFront", "isEnabled":true, "maxBiasOffset":0.1}]
+                ["controller", {"controllerName":"activeBiasRear", "isEnabled":true, "maxBiasOffset":0.2}]
+
+                ["controller", {"controllerName":"adaptiveFrontDamper", "damperMode":"regular"}]
+                ["controller", {"controllerName":"adaptiveRearDamper", "damperMode":"regular"}]
+
+                ["controller", {"controllerName":"adaptiveFrontSwayBar", "torsionBarMode":"regular"}]
+                ["controller", {"controllerName":"adaptiveRearSwayBar", "torsionBarMode":"regular"}]
+
+                ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                ["controller", {"controllerName":"motorTorqueControl", "tractionControl": "default", "yawControl": "default"}]
+                ["controller", {"controllerName":"brakeControl", "tractionControl": "default", "yawControl": "default"}]
+
+                ["controller", {"controllerName":"twoStepLaunch", "isEnabled":false, "launchRPM":3000}]
+            ],
+            "modes": {
+                "comfort": {
+                    "name": "Comfort",
+                    "order": 10,
+                    "settings": [
+                        ["type"]
+                        ["controller", {"controllerName":"CMU", "uiDisplayData.simplePowertrainApp.activeColor": "238BE6"}]
+                    ],
+                },
+                "sport": {
+                    "name": "Sport",
+                    "order": 20,
+                    "settings": [
+                        ["type"]
+                        ["exhaust", {"name": "mainEngine", "mufflingOffset": -0.15, "gainOffset": 0}],
+                        ["transmission", {"defaultForwardMode": "S"}],
+
+                        ["controller", {"controllerName":"electronicSplitShaftLock", "isEnabled":true, "minimumLock":0.25}]
+
+                        ["controller", {"controllerName":"adaptiveFrontDamper", "damperMode":"hard"}]
+                        ["controller", {"controllerName":"adaptiveRearDamper", "damperMode":"hard"}]
+
+                        ["controller", {"controllerName":"adaptiveFrontSwayBar", "torsionBarMode":"hard"}]
+                        ["controller", {"controllerName":"adaptiveRearSwayBar", "torsionBarMode":"hard"}]
+
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.3,
+                            "yawControl.isEnabled":true,
+                        }]
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.2,
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.1,
+                            "yawControl.yawAvThreshold": 0.6
+                        }]
+
+                        ["controller", {"controllerName":"CMU", "uiDisplayData.simplePowertrainApp.activeColor": "DA0C0C"}]
+
+                        ["controller", {"controllerName":"twoStepLaunch", "isEnabled":true, "launchRPM":4000}]
+                    ],
+                },
+                "sportplus": {
+                    "name": "Sport Plus",
+                    "order": 30,
+                    "settings": [
+                        ["type"]
+                        ["exhaust", {"name": "mainEngine", "mufflingOffset": -0.2, "gainOffset": 1}],
+                        ["turbocharger", {"name": "mainEngine", "wastegateOffset": 2}],
+                        ["transmission", {"defaultForwardMode": "S"}],
+
+                        ["controller", {"controllerName":"electronicSplitShaftLock", "isEnabled":true, "minimumLock":0.4}]
+
+                        ["controller", {"controllerName":"activeBiasFront", "isEnabled":true, "maxBiasOffset":0.2}]
+                        ["controller", {"controllerName":"activeBiasRear", "isEnabled":true, "maxBiasOffset":0.3}]
+
+                        ["controller", {"controllerName":"adaptiveFrontDamper", "damperMode":"hard"}]
+                        ["controller", {"controllerName":"adaptiveRearDamper", "damperMode":"hard"}]
+
+                        ["controller", {"controllerName":"adaptiveFrontSwayBar", "torsionBarMode":"hard"}]
+                        ["controller", {"controllerName":"adaptiveRearSwayBar", "torsionBarMode":"hard"}]
+
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.3,
+                            "yawControl.isEnabled":true,
+                        }]
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.2,
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.2,
+                            "yawControl.yawAvThreshold": 0.6
+                        }]
+
+                        ["controller", {"controllerName":"CMU", "uiDisplayData.simplePowertrainApp.activeColor": "8ED500"}]
+
+                        ["controller", {"controllerName":"twoStepLaunch", "isEnabled":true, "launchRPM":4000}]
+                    ],
+                },
+                "off": {
+                    "name": "ESC & TC Off",
+                    "order": 50,
+                    "settings": [
+                        ["type"]
+                        ["exhaust", {"name": "mainEngine", "mufflingOffset": -0.2, "gainOffset": 1}],
+                        ["transmission", {"defaultForwardMode": "S"}],
+                        ["controller", {"controllerName":"electronicSplitShaftLock", "isEnabled":true, "minimumLock":0.25}]
+
+                        ["controller", {"controllerName":"adaptiveFrontDamper", "damperMode":"hard"}]
+                        ["controller", {"controllerName":"adaptiveRearDamper", "damperMode":"hard"}]
+
+                        ["controller", {"controllerName":"adaptiveFrontSwayBar", "torsionBarMode":"hard"}]
+                        ["controller", {"controllerName":"adaptiveRearSwayBar", "torsionBarMode":"hard"}]
+
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":false}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":false}]
+                        ["controller", {"controllerName":"motorTorqueControl"}]
+                        ["controller", {"controllerName":"brakeControl"}]
+
+                        ["controller", {"controllerName":"CMU", "uiDisplayData.simplePowertrainApp.activeColor": "999999"}]
+
+                        ["controller", {"controllerName":"twoStepLaunch", "isEnabled":true, "launchRPM":4000}]
+
+                    ],
+                }
+            },
+        },
+    },
+
+    "n370z_DSE_drivemodes_Sport": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Sport Plus Mode",
+            "value":500,
+        },
+        "slotType" : "n370z_DSE_drivemodes_Sport",
+
+        "driveModes": {
+            "enabledModes_Sport":["sportplus"]
+        }
+    },
+
+    "n370z_DSE_drivemodes_default_comfort": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Comfort Mode",
+            "value":500,
+        },
+        "slotType" : "n370z_DSE_drivemodes_default",
+
+        "driveModes": {
+            "defaultMode":"comfort"
+        }
+    },
+
+    "n370z_DSE_drivemodes_default_sport": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Sport Mode",
+            "value":500,
+        },
+        "slotType" : "n370z_DSE_drivemodes_default",
+
+        "driveModes": {
+            "defaultMode":"sport"
+        }
+    },
+
+    "n370z_DSE_drivemodes_default_Sport": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Sport Plus Mode",
+            "value":500,
+        },
+        "slotType" : "n370z_DSE_drivemodes_default",
+
+        "driveModes": {
+            "defaultMode":"ttSport"
+        }
+    },
+
+    "n370z_DSE_drivemodes_default_off": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"ESC & TC Off Mode",
+            "value":500,
+        },
+        "slotType" : "n370z_DSE_drivemodes_default",
+
+        "driveModes": {
+            "defaultMode":"off"
+        }
+    },
+}

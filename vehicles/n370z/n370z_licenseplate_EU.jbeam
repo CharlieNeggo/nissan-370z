@@ -1,0 +1,28 @@
+{
+"n370z_licenseplate_F_EU": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front EU License Plate",
+        "value":0,
+    },
+    "slotType" : "n370z_licenseplate_F",
+    "licenseplateFormat": "52-11",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["licenseplate-52-11-r1", ["n370z_bumper_F"],[],{"pos":{"x":0.0, "y":-2.220, "z":0.45}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+},
+"n370z_licenseplate_R_EU": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear EU License Plate",
+        "value":0,
+    },
+    "slotType" : "n370z_licenseplate_R",
+    "licenseplateFormat": "52-11",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["licenseplate-52-11-r2", ["n370z_trunk"],[],{"pos":{"x":0.0, "y":2.143, "z":0.778}, "rot":{"x":17, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+},
+}

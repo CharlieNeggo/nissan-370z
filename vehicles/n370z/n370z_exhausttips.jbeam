@@ -1,0 +1,62 @@
+{
+"n370z_muffler": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Muffler",
+        "value":150,
+    },
+    "slotType" : "n370z_muffler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_muffler", ["n370z_body"]],
+    ],
+},
+"n370z_muffler_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Muffler",
+        "value":150,
+    },
+    "slotType" : "n370z_muffler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_muffler_nismo", ["n370z_body"]],
+    ],
+},
+"n370z_muffler_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Muffler",
+        "value":150,
+    },
+    "slotType" : "n370z_muffler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_muffer_race", ["n370z_body"]],
+    ],
+},
+"n370z_muffler_titanium": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tomei Exhaust",
+        "value":150,
+    },
+    "slotType" : "n370z_muffler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_muffer_titanium", ["n370z_body"]],
+    ],
+},
+"n370z_muffler_titanium_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Tomei Exhaust",
+        "value":150,
+    },
+    "slotType" : "n370z_muffler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["n370z_muffer_titanium_nismo", ["n370z_body"]],
+    ],
+},
+}

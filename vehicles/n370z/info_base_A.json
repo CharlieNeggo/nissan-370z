@@ -1,0 +1,12 @@
+{
+"Drivetrain":"RWD",
+"Configuration":"2009 Base (A)",
+"Transmission":"Automatic",
+"Description":"Base model, nothing special, 2009 model year",
+"Value":27000,
+"Propulsion":"ICE",
+"Fuel Type":"Gasoline",
+"Induction Type":"NA",
+"Config Type":"Factory",
+"default_color":"Brilliant Silver"
+}

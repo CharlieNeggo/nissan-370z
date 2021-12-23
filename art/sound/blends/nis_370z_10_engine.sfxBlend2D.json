@@ -1,0 +1,38 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>default",
+    "samples" : 
+    [
+        [
+			["art/sound/engine/nis_370z_10/Engine_00645.wav", 645],
+			["art/sound/engine/nis_370z_10/Engine_01025.wav", 1025],
+			["art/sound/engine/nis_370z_10/Engine_01890.wav", 1890],
+			["art/sound/engine/nis_370z_10/Engine_02373.wav", 2373],
+			["art/sound/engine/nis_370z_10/Engine_02915.wav", 2915],
+			["art/sound/engine/nis_370z_10/Engine_03472.wav", 3472],
+			["art/sound/engine/nis_370z_10/Engine_04094.wav", 4094],
+			["art/sound/engine/nis_370z_10/Engine_04409.wav", 4409],
+			["art/sound/engine/nis_370z_10/Engine_04995.wav", 4995],
+			["art/sound/engine/nis_370z_10/Engine_05464.wav", 5464],
+			["art/sound/engine/nis_370z_10/Engine_05977.wav", 5977],
+			["art/sound/engine/nis_370z_10/Engine_06343.wav", 6343]
+        ]
+        ,
+        [
+			["art/sound/engine/nis_370z_10/Engine_00645.wav", 645],
+			["art/sound/engine/nis_370z_10/Engine_01025.wav", 1025],
+			["art/sound/engine/nis_370z_10/Engine_01890.wav", 1890],
+			["art/sound/engine/nis_370z_10/Engine_02373.wav", 2373],
+			["art/sound/engine/nis_370z_10/Engine_02915.wav", 2915],
+			["art/sound/engine/nis_370z_10/Engine_03472.wav", 3472],
+			["art/sound/engine/nis_370z_10/Engine_04094.wav", 4094],
+			["art/sound/engine/nis_370z_10/Engine_04409.wav", 4409],
+			["art/sound/engine/nis_370z_10/Engine_04995.wav", 4995],
+			["art/sound/engine/nis_370z_10/Engine_05464.wav", 5464],
+			["art/sound/engine/nis_370z_10/Engine_05977.wav", 5977],
+			["art/sound/engine/nis_370z_10/Engine_06343.wav", 6343]
+		]
+    ]
+}
